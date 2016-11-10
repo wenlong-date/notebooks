@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改版记事本</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+	<link rel="stylesheet" href="css/jquery.mobile.min.css">
+	<link rel="stylesheet" href="css/wl.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+	<script type="text/javascript" src="js/wilddog.js"></script>
+	<script type="text/javascript" src="js/wilddog-sync.js"></script>
+	<script type="text/javascript" src="js/wl.js"></script>
+</head>
+<body>
+	
+	<!-- 首页 记事本列表 -->
+	<div data-role="page" id="home">
+		<div data-role="header" id="header">
+			<a href="javascript:;" data-icon="cloud" id="syncWilddog">同步</a>
+			<h1>WL记事本</h1>
+			<a href="javascript:;" data-icon="plus" class="ui-btn-right" id="new">新增记录</a>
+		</div>
+		<div data-role="content">
+			<ul id="list" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="快速搜索"></ul>
+		</div>
+	</div>
+	
+	<!-- 新增记录 -->
+	<div id="addNote" data-role="dialog">
+		<div data-role="header">
+			<h1>新增备忘录</h1>
+		</div>
+		<div data-role="content">
+			<input type="text" id="title" placeholder="备忘录的标题">
+			<textarea  id="inputMemo" placeholder="备忘录内容" cols="40" rows="40"></textarea>
+			<a href="javascript:;" data-role="button" id="save">保存</a>
+		</div>
+	</div>
+
+	<!-- 查看并能修改记录 -->
+	<div id="editNote" data-role="dialog">
+		<div data-role="header">
+			<h1>备忘录--<span class="edit-head"></span></h1>
+		</div>
+		<div data-role="content">
+			<input type="text" class="edit-title" placeholder="备忘录的标题">
+			<textarea  class="edit-content" placeholder="备忘录内容" cols="40" rows="40"></textarea>
+			<a href="javascript:;" data-role="button" class="edit-save">保存</a>
+		</div>
+		<div data-role="footer" style="text-align:center;overflow: hidden">
+			<p class="edit-time"></p>
+		</div>
+	</div>
+
+	
+</body>
+</html>

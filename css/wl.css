@@ -1,0 +1,29 @@
+@charset 'utf-8';
+.css_btn_class{
+	float: left;
+	padding: 0.6em;
+	position: relative;
+	z-index: 10;
+	font-size: 16px;
+	font-family: Arial;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 9px 18px;
+}
+#list>li{
+	position: relative;
+}
+#list>li button.del_btn{
+	position: absolute;
+	right: 46px;
+	display: none;
+	padding: 8px 12px;
+	width: 66px;
+	font-size: 14px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	top: 20px;
+}
